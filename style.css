@@ -1,0 +1,79 @@
+*{
+    margin: 0%;
+    padding: 0%;
+}
+body{
+    background: url('img.jpg');
+    background-size: cover;
+    background-attachment: fixed;
+}
+#container{
+    display: grid;
+    align-items: center;
+    justify-content: center;
+}
+#calculator {
+    background: url('img.jpg');
+    height: 30rem;
+    width: 20rem;
+    margin: 3rem;
+    position: relative;
+    box-shadow: -12px 12px 10px 12px rgba(0, 0, 0, 0.25),
+                12px 12px 10px 12px rgba(0, 0, 0, 0.25);
+
+
+}
+#result{
+    height: 120px;
+    font-size: 32px;
+    font-weight: 300;
+}
+#history{
+    text-align: right;
+    height: 20px;
+    margin: 0 30px;
+    padding-top: 20px;
+    font-size: 20px;
+    color: #363636;
+}
+#output{
+    text-align: right;
+    height: 60px;
+    margin: 10px 20px;
+}
+#keyboard{
+    height: 400px;
+    position: absolute;
+    top: 5rem;
+}
+#keyboard button{
+    background: url('img.jpg');
+    display: inline-block;
+    border-radius: 1px;
+    border: 1px solid;
+    box-shadow: 2px 2px 1px 0px rgba(0, 0, 0, .34);
+    transition: border-color .2s ease-in-out, background-color .2s, box-shadow .2s;
+}
+
+.operator, .number, .empty{
+    width: 50px;
+    height: 50px;
+    margin: 15px;
+    float: left;
+    border-radius: 50%;
+    border-width: 0%;
+    font-weight: bold;
+    font-size: 15px;
+}
+.number, .empty{
+    background-color: #eaedef;
+}
+.number, .operator{
+    cursor: pointer;
+}
+.operator:active, .number:active{
+    font-size: 13px;
+}
+.operator:focus, .number:focus, .empty:focus{
+    outline: 0;
+}
